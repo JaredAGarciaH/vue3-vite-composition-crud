@@ -31,43 +31,84 @@ select {
   min-height: 100vh;
 }
 
-.app {
-  display: grid;
-  min-height: 100vh;
-  place-items: center;
-  padding: 2rem;
+a {
+  color: #2563eb;
+  text-decoration: none;
 }
 
-.intro {
-  width: min(100%, 720px);
-  text-align: center;
+a:hover {
+  text-decoration: underline;
 }
 
-.intro h1 {
-  margin: 0;
-  color: #1f2933;
-  font-size: 3rem;
+.site-header {
+  border-bottom: 1px solid #d9e2ec;
+  background: #ffffff;
+}
+
+.nav,
+.container {
+  width: min(100% - 2rem, 1080px);
+  margin: 0 auto;
+}
+
+.nav {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+.nav a.router-link-active {
   font-weight: 700;
-  line-height: 1.1;
 }
 
-.intro p {
-  margin: 1rem 0 0;
+.container {
+  padding: 2rem 0;
+}
+
+h1 {
+  margin: 0 0 1rem;
+  color: #1f2933;
+}
+
+p {
+  margin: 0;
   color: #52606d;
-  font-size: 1.25rem;
   line-height: 1.5;
 }
 
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #ffffff;
+}
+
+th,
+td {
+  padding: 0.75rem;
+  border: 1px solid #d9e2ec;
+  text-align: left;
+}
+
+th {
+  background: #eef2f7;
+}
+
+button {
+  cursor: pointer;
+}
+
+.acciones {
+  display: flex;
+  gap: 0.5rem;
+}
+
 @media (max-width: 640px) {
-  .app {
-    padding: 1.5rem;
+  .nav {
+    flex-wrap: wrap;
   }
 
-  .intro h1 {
-    font-size: 2.25rem;
-  }
-
-  .intro p {
-    font-size: 1rem;
+  table {
+    display: block;
+    overflow-x: auto;
   }
 }

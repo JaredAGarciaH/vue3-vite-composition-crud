@@ -1,11 +1,13 @@
-<script setup>
-</script>
-
 <template>
-  <main class="app">
-    <section class="intro" aria-labelledby="page-title">
-      <h1 id="page-title">Inventario de libros</h1>
-      <p>Vue 3 + Vite + Composition API</p>
-    </section>
+  <header class="site-header">
+    <nav class="nav">
+      <RouterLink to="/">Inicio</RouterLink>
+      <RouterLink to="/libros">Libros</RouterLink>
+      <RouterLink to="/libros/nuevo">Nuevo libro</RouterLink>
+    </nav>
+  </header>
+
+  <main class="container">
+    <RouterView />
   </main>
 </template>
