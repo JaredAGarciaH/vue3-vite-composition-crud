@@ -1,32 +1,33 @@
 {
   "libros": [
     {
-      "id": 1,
+      "id": "1",
       "titulo": "Cien años de soledad",
       "autor": "Gabriel García Márquez",
       "editorial": "Sudamericana",
       "anio": 1967
     },
     {
-      "id": 2,
+      "id": "2",
       "titulo": "Don Quijote de la Mancha",
       "autor": "Miguel de Cervantes",
       "editorial": "Francisco de Robles",
       "anio": 1605
     },
     {
-      "id": 3,
+      "id": "3",
       "titulo": "El principito",
       "autor": "Antoine de Saint-Exupéry",
       "editorial": "Reynal & Hitchcock",
       "anio": 1943
     },
     {
-      "id": 4,
       "titulo": "Pedro Páramo",
       "autor": "Juan Rulfo",
       "editorial": "Fondo de Cultura Económica",
-      "anio": 1955
+      "anio": 1956,
+      "id": "4"
     }
-  ]
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
 }

@@ -10,6 +10,15 @@ const obtenerLibros = async () => {
   libros.value = respuesta.data
 }
 
+const eliminarLibro = async (id) => {
+  const confirmar = confirm('¿Deseas eliminar este libro?')
+
+  if (confirmar) {
+    await axios.delete(`http://localhost:3000/libros/${id}`)
+    obtenerLibros()
+  }
+}
+
 onMounted(() => {
   obtenerLibros()
 })
@@ -39,7 +48,7 @@ onMounted(() => {
           <td>{{ libro.anio }}</td>
           <td class="acciones">
             <RouterLink :to="`/libros/editar/${libro.id}`">Editar</RouterLink>
-            <button type="button">Eliminar</button>
+            <button type="button" @click="eliminarLibro(libro.id)">Eliminar</button>
           </td>
         </tr>
       </tbody>

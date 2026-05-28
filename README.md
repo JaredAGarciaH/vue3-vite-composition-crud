@@ -1,6 +1,6 @@
 # vue3-vite-composition-crud
 
-Aplicacion web de inventario de libros creada con Vue 3 y Vite. En esta etapa se configura Vue Router, JSON Server y el primer listado de libros usando Axios.
+Aplicacion web de inventario de libros creada con Vue 3 y Vite. El proyecto ya permite crear, listar, editar y eliminar libros usando Vue Router, Axios y JSON Server.
 
 ## Tecnologias iniciales
 
@@ -37,6 +37,13 @@ URL de libros:
 ```text
 http://localhost:3000/libros
 ```
+
+## Funcionalidades
+
+- Crear libros
+- Listar libros
+- Editar libros
+- Eliminar libros
 
 ## Build de produccion
 

@@ -97,9 +97,40 @@ button {
   cursor: pointer;
 }
 
+form {
+  display: grid;
+  gap: 1rem;
+  max-width: 520px;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.35rem;
+  font-weight: 700;
+}
+
+input {
+  width: 100%;
+  padding: 0.65rem;
+  border: 1px solid #bcccdc;
+  border-radius: 4px;
+}
+
 .acciones {
   display: flex;
   gap: 0.5rem;
+}
+
+.acciones-formulario {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.mensaje-error {
+  margin-bottom: 1rem;
+  color: #b91c1c;
+  font-weight: 700;
 }
 
 @media (max-width: 640px) {
