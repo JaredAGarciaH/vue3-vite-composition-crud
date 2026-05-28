@@ -26,32 +26,41 @@ onMounted(() => {
 
 <template>
   <section>
-    <h1>Libros</h1>
+    <div class="encabezado-vista">
+      <h1>Libros</h1>
+      <RouterLink class="boton boton-crear" to="/libros/nuevo">Nuevo libro</RouterLink>
+    </div>
 
-    <table>
-      <thead>
-        <tr>
-          <th>ID</th>
-          <th>Título</th>
-          <th>Autor</th>
-          <th>Editorial</th>
-          <th>Año</th>
-          <th>Acciones</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr v-for="libro in libros" :key="libro.id">
-          <td>{{ libro.id }}</td>
-          <td>{{ libro.titulo }}</td>
-          <td>{{ libro.autor }}</td>
-          <td>{{ libro.editorial }}</td>
-          <td>{{ libro.anio }}</td>
-          <td class="acciones">
-            <RouterLink :to="`/libros/editar/${libro.id}`">Editar</RouterLink>
-            <button type="button" @click="eliminarLibro(libro.id)">Eliminar</button>
-          </td>
-        </tr>
-      </tbody>
-    </table>
+    <div class="tabla-contenedor">
+      <table>
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Título</th>
+            <th>Autor</th>
+            <th>Editorial</th>
+            <th>Año</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr v-for="libro in libros" :key="libro.id">
+            <td>{{ libro.id }}</td>
+            <td>{{ libro.titulo }}</td>
+            <td>{{ libro.autor }}</td>
+            <td>{{ libro.editorial }}</td>
+            <td>{{ libro.anio }}</td>
+            <td class="acciones">
+              <RouterLink class="boton boton-editar" :to="`/libros/editar/${libro.id}`">
+                Editar
+              </RouterLink>
+              <button class="boton boton-eliminar" type="button" @click="eliminarLibro(libro.id)">
+                Eliminar
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </section>
 </template>

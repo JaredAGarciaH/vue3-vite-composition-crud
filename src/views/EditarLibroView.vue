@@ -51,7 +51,7 @@ onMounted(() => {
 
     <p v-if="error" class="mensaje-error">{{ error }}</p>
 
-    <form @submit.prevent="actualizarLibro">
+    <form class="formulario" @submit.prevent="actualizarLibro">
       <div class="campo">
         <label for="titulo">Título</label>
         <input id="titulo" v-model="titulo" type="text" />
@@ -73,8 +73,8 @@ onMounted(() => {
       </div>
 
       <div class="acciones-formulario">
-        <button type="submit">Actualizar</button>
-        <RouterLink to="/libros">Volver al listado</RouterLink>
+        <button class="boton boton-editar" type="submit">Actualizar</button>
+        <RouterLink class="boton boton-secundario" to="/libros">Volver al listado</RouterLink>
       </div>
     </form>
   </section>

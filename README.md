@@ -1,41 +1,43 @@
-# vue3-vite-composition-crud
+# Vue 3 Vite Composition CRUD
 
-Aplicacion web de inventario de libros creada con Vue 3 y Vite. El proyecto ya permite crear, listar, editar y eliminar libros usando Vue Router, Axios y JSON Server.
+## Descripción
 
-## Tecnologias iniciales
+Aplicación web de inventario de libros desarrollada con Vue 3, Vite, Composition API, Vue Router, Axios y JSON Server. Permite realizar operaciones CRUD sobre libros.
 
-- Vue 3
+## Tecnologías utilizadas
+
+- Vue.js 3
 - Vite
 - JavaScript
 - Composition API
 - Vue Router
 - Axios
 - JSON Server
+- HTML
+- CSS
 
-## Instalacion
+## Instalación
 
 ```bash
 npm install
 ```
 
-## Ejecucion local
-
-```bash
-npm run dev
-```
-
-## API local con JSON Server
-
-Levantar la API:
+## Ejecutar JSON Server
 
 ```bash
 npm run server
 ```
 
-URL de libros:
+La API queda disponible en:
 
 ```text
 http://localhost:3000/libros
+```
+
+## Ejecutar Vue en local
+
+```bash
+npm run dev
 ```
 
 ## Funcionalidades
@@ -45,7 +47,7 @@ http://localhost:3000/libros
 - Editar libros
 - Eliminar libros
 
-## Build de produccion
+## Build de producción
 
 ```bash
 npm run build

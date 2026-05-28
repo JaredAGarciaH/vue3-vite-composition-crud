@@ -34,7 +34,7 @@ const guardarLibro = async () => {
 
     <p v-if="error" class="mensaje-error">{{ error }}</p>
 
-    <form @submit.prevent="guardarLibro">
+    <form class="formulario" @submit.prevent="guardarLibro">
       <div class="campo">
         <label for="titulo">Título</label>
         <input id="titulo" v-model="titulo" type="text" />
@@ -56,8 +56,8 @@ const guardarLibro = async () => {
       </div>
 
       <div class="acciones-formulario">
-        <button type="submit">Guardar</button>
-        <RouterLink to="/libros">Volver al listado</RouterLink>
+        <button class="boton boton-crear" type="submit">Guardar</button>
+        <RouterLink class="boton boton-secundario" to="/libros">Volver al listado</RouterLink>
       </div>
     </form>
   </section>

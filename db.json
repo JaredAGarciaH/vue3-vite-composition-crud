@@ -8,11 +8,11 @@
       "anio": 1967
     },
     {
-      "id": "2",
       "titulo": "Don Quijote de la Mancha",
       "autor": "Miguel de Cervantes",
       "editorial": "Francisco de Robles",
-      "anio": 1605
+      "anio": 1605,
+      "id": "2"
     },
     {
       "id": "3",
@@ -22,11 +22,11 @@
       "anio": 1943
     },
     {
+      "id": "4",
       "titulo": "Pedro Páramo",
       "autor": "Juan Rulfo",
       "editorial": "Fondo de Cultura Económica",
-      "anio": 1956,
-      "id": "4"
+      "anio": 1955
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
